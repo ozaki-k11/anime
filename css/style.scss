@@ -1,0 +1,73 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+header {
+    width: 25vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: visible;
+
+    > nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.d_seasonsList {
+
+    display: inline-flex;
+    flex-direction: column-reverse;
+
+    > li {
+        border: .1rem solid black;
+        border-radius: .25em;
+        padding: .8rem 1.5rem;
+        margin-bottom: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: royalblue;
+            color: white
+        }
+
+        &:first-child {
+            margin-bottom: 10rem;
+        }
+        &:last-child {
+            margin-top: 3rem;
+        }
+    }
+    > .selected {
+       background-color: royalblue;
+       color: white; 
+    }
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.d_season {
+    padding: 1.5rem;
+}
+
+.d_selectedSeasonsAnime {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+}

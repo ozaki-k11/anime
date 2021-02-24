@@ -1,0 +1,96 @@
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+header {
+  width: 25vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+header > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d_seasonsList {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.d_seasonsList > li {
+  border: .1rem solid black;
+  border-radius: .25em;
+  padding: .8rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.d_seasonsList > li:hover {
+  cursor: pointer;
+  background-color: royalblue;
+  color: white;
+}
+
+.d_seasonsList > li:first-child {
+  margin-bottom: 10rem;
+}
+
+.d_seasonsList > li:last-child {
+  margin-top: 3rem;
+}
+
+.d_seasonsList > .selected {
+  background-color: royalblue;
+  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.d_season {
+  padding: 1.5rem;
+}
+
+.d_selectedSeasonsAnime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
