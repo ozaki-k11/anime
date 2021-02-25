@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  width: 25vw;
+  width: 20vw;
   height: 100vh;
   overflow-y: scroll;
   overflow-x: visible;
@@ -37,32 +37,25 @@ header > nav {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  width: 100%;
+  background-color: #2e4040;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
 }
 
 .d_seasonsList > li {
-  border: .1rem solid black;
-  border-radius: .25em;
-  padding: .8rem 1.5rem;
-  margin-bottom: 1rem;
+  padding: 1em 0;
 }
 
 .d_seasonsList > li:hover {
   cursor: pointer;
-  background-color: royalblue;
-  color: white;
-}
-
-.d_seasonsList > li:first-child {
-  margin-bottom: 10rem;
-}
-
-.d_seasonsList > li:last-child {
-  margin-top: 3rem;
+  background-color: #04202a;
 }
 
 .d_seasonsList > .selected {
-  background-color: royalblue;
-  color: white;
+  background-color: #04202a;
+  text-decoration: underline;
 }
 
 main {
@@ -73,14 +66,14 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 75vw;
+  width: 80vw;
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 .d_season {
-  padding: 1.5rem;
+  padding: 1.5em;
 }
 
 .d_selectedSeasonsAnime {
@@ -91,6 +84,48 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 3rem;
+  padding-left: 3em;
+}
+
+.d_selectedSeasonsAnime > li > dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+  letter-spacing: .15em;
+  border-bottom: #2e4040 solid .01em;
+}
+
+.d_selectedSeasonsAnime > li > dl > dt {
+  display: inline;
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.d_selectedSeasonsAnime > li > dl > dd {
+  display: inline-block;
+  padding: .25em;
+}
+
+.d_selectedSeasonsAnime > li > dl > dd a {
+  text-decoration: none;
+  color: white;
+}
+
+.d_selectedSeasonsAnime > li > dl .dd_url_public {
+  background-color: #ff432e;
+  margin-right: .5em;
+}
+
+.d_selectedSeasonsAnime > li > dl .dd_url_twitter {
+  background-color: #53bbf4;
 }
 /*# sourceMappingURL=style.css.map */
