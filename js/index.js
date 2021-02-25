@@ -52,9 +52,7 @@ function setSelectedSeasonsAnimeList(result) {
         const li = document.createElement("li");
         const dl = document.createElement("dl");
         const dt = document.createElement("dt");
-        const h3 = document.createElement("h3");
-        h3.innerText = res.title;
-        dt.appendChild(h3);
+        dt.innerText = res.title;
         dl.appendChild(dt);
         dl.appendChild(ddCreate(res.public_url, 0));
         dl.appendChild(ddCreate(`https://twitter.com/${res.twitter_account}`, 1));
@@ -74,7 +72,7 @@ function ddCreate(url, type) {
 function getLinkType(type) {
     const urlList = [
         {str: "公式サイト", className: "dd_url_public"},
-        {str: "公式Twitter", className: "dd_url_twitter"}
+        {str: "Twitter", className: "dd_url_twitter"}
     ]
     return (type === 1) ? urlList[1] : urlList[0];
 }
